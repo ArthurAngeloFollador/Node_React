@@ -7,7 +7,6 @@ interface Produto {
   descricao: string;
 }
 
-
 // 1- Use Partial para criar uma função atualizarProduto que permita passar só alguns campos para atualizar.
 
 const p1: Partial<Produto> = { nome: "Boneco de Ação" } //Permite modificar um atributo e deixar os outros opcionais
