@@ -35,4 +35,4 @@ Este repositório é de uso pessoal, mas caso queira sugerir melhorias ou trocar
 ---
 
 ## Autor
-Feito por [`Arthur A. Follador`](https://github.com/Azzazyel)
+Feito por [`Arthur A. Follador`](https://github.com/ArthurAngeloFollador)

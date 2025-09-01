@@ -25,7 +25,7 @@ const buscarPorNome = (Busca) => {
     const usuarioBuscaNome = usuarios.find((u) => u.nome === Busca); //retorna apenas o primeiro usuario que bate com a busca
     if (usuarioBuscaNome) {
         console.log(`Usuario encontrado na posição ${usuarioBuscaNome.id}`); //retorna o id do usuarioBuscaNome procurado
-        console.log(`Informacoes completas: \n ${JSON.stringify(usuarioBuscaNome)}`); //retorna o objeto inteiro procurado serializado, em string
+        console.log(`Informacoes completas: \n ${JSON.stringify(usuarioBuscaNome, null, 2)}`); //retorna o objeto inteiro procurado serializado, em string
     }
     else {
         console.log(`Usuario nao encontrado`);
