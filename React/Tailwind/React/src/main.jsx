@@ -1,0 +1,23 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import TaskPage from "./pages/TaskPage.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/", //caminho, pode ser alterado no url
+    element: <App />, //o que vai ser renderizado
+  },
+  {
+    path: "/task",
+    element: <TaskPage />,
+  },
+]);
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
+);
