@@ -5,6 +5,9 @@ const app = express();
 
 app.use(express.json());
 
+app.set("view engine", "ejs");
+app.set("views", "src/views");
+
 // middleware => funcoes que sao executadas antes do express
 app.use((req, res, next) => {
   console.log(`Request Type: ${req.method}`);
@@ -12,6 +15,12 @@ app.use((req, res, next) => {
   console.log(`Date: ${new Date()}`);
 
   next();
+});
+
+app.get("/views/users", async (req, res) => {
+  const users = await UserModel.find({});
+
+  res.render("index", { users });
 });
 
 app.get("/home", (req, res) => {
