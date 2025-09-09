@@ -24,7 +24,7 @@ O objetivo deste repositório é **documentar minha evolução** no aprendizado 
 ---
 
 ## Projetos de Prática
-Na pasta [`/projetos`](./projetos) estão algumas aplicações criadas a partir do conteúdo estudado.  
+Na pasta [`/Projetos`](./Projetos) estão algumas aplicações criadas a partir do conteúdo estudado.  
 *(Exemplo: To-Do List, CRUD de usuários, consumo de APIs, etc.)*  
 
 ---
